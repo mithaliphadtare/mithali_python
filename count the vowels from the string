@@ -1,4 +1,5 @@
 str=input("enter the string:")
+str=str.lower()
 vowel=('a','e','i','o','u')
 count=0
 
