@@ -1,0 +1,23 @@
+n=int(input("enter a radius or side:"))
+def circle(n):
+    area=3.14*n*n
+    return area
+
+def square(n):
+    area1=n*n
+    return area1
+
+def triangle(n):
+    h=int(input("enter a height of triangle:"))
+    area2=0.5*n*h
+    return area2
+
+def rectangle(n):
+    ht=int(input("enter a height for rectangle:"))
+    area3=n*ht
+    return area3
+
+print("area of circle is:",circle(n))
+print("area of square is:",square(n))
+print("area of triangle is:",triangle(n))
+print("area of rectangle is:",rectangle(n))
