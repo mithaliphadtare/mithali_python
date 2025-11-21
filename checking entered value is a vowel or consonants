@@ -1,0 +1,16 @@
+a=input("enter only one character:")
+a=a.lower()
+def check(a):
+    integer=('1','2','3','4','5','6','7','8','9','0')
+    spec=('!','@','#','$','%','^','&','*','/','?',')','(')
+    if a in integer:
+        print("entered value is not a character")
+    elif a in spec:
+        print("entered value is a special character")
+    else:
+        if a=='a' or a=='e' or a=='i' or a=='o' or a=='u':
+            print("enter value is a vowel")
+        else:
+            print("enter value is a consonant")
+
+check(a)
