@@ -1,0 +1,9 @@
+str=input("enter the string:")
+vowel=('a','e','i','o','u')
+count=0
+
+for i in range(len(str)):
+    if str[i] in vowel:
+        count=count+1
+
+print("the vowels are:",count)
