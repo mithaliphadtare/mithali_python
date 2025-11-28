@@ -1,0 +1,3 @@
+f=open("first.txt","a")
+f.write("have a good day!")
+f.close()
