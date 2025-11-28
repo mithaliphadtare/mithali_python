@@ -1,0 +1,4 @@
+f=open("first.txt","a")
+
+f.write("great")
+print(f.tell())
