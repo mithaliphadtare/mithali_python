@@ -1,0 +1,5 @@
+f=open("first.txt","r")
+print(f.read())
+f=open("first.txt","w")
+print(f.write("python programming!"))
+f.close()
