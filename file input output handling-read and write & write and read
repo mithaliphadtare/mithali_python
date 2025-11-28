@@ -1,0 +1,11 @@
+f=open("first.txt","r+")
+print(f.read())
+f.write("file input output handling in python")
+f.close()
+
+
+
+f=open("first.txt","w+")
+f.write("new file!")
+print(f.read())
+f.close()
