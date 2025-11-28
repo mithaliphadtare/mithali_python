@@ -1,0 +1,4 @@
+f=open("first.txt","w+")
+f.write("how are you?")
+print(f.seek(0))
+print(f.read())
