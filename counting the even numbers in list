@@ -1,0 +1,8 @@
+list=[78,90,23,12,112,11]
+i=0
+count=0
+while i<6:
+    if list[i]%2==0:
+        count+=1
+    i+=1
+print(count)
