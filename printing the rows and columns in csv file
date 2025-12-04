@@ -1,0 +1,15 @@
+import csv
+# reading each element in row
+with open('students.csv','w',newline='')as f:
+    writer=csv.writer(f)
+    writer.writerow(["name","age","marks"])
+    writer.writerow(["Mithali","18","67"])
+    writer.writerow(["Sanchita","19","78"])
+    writer.writerow(["Apurva","20","80"])
+    writer.writerow(["aditi","21","81"])
+    writer.writerow(["Prajakta","22","100"])
+import csv
+with open('students.csv','r')as f:
+    reader=csv.reader(f)
+    for row in reader:
+        print(row)
