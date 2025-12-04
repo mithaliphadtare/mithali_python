@@ -1,0 +1,10 @@
+# importing math library
+import math
+print(math.sqrt(5))
+print(math.pow(5,3))
+
+
+#importing random library
+for i in range(1,6):
+    import random as r
+    print(r.randint(1,100))
