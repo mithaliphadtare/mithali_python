@@ -1,0 +1,6 @@
+import csv
+# reading each element in row 
+f=open('students.csv','r')
+reader = csv.reader(f)
+for row in reader:
+    print(row)
