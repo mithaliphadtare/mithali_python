@@ -1,0 +1,16 @@
+import tkinter as tk
+from itertools import combinations_with_replacement
+from tkinter import ttk
+root =tk.Tk()
+root.title("RadioButton Example")
+root.geometry("400x500")
+
+combo=ttk.Combobox(root,values=["fy","SY","TY"])
+combo.current(0)
+combo.pack()
+def show():
+    print(combo.get())
+
+tk.Button(root,text="show",command=show).pack()
+
+root.mainloop()
