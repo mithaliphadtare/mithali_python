@@ -1,0 +1,40 @@
+import tkinter as tk
+from tkinter import messagebox
+root=tk.Tk()
+root.title("My first GUI")
+root.geometry("400x400")
+
+tk.Label(root,text="Number 1").pack()
+e1=tk.Entry(root)
+e1.pack()
+tk.Label(root,text="Number 2").pack()
+e2=tk.Entry(root)
+e2.pack()
+
+def operation1():
+    n1=int(e1.get())
+    n2=int(e2.get())
+    messagebox.showinfo("addition:",f"sum= {n1+n2}")
+
+def operation2():
+    n1=int(e1.get())
+    n2=int(e2.get())
+    messagebox.showinfo("substraction:",f"substraction= {n1-n2}")
+
+def operation3():
+    n1=int(e1.get())
+    n2=int(e2.get())
+    messagebox.showinfo("multiplication:",f"multiplication= {n1*n2}")
+
+def operation4():
+    n1=int(e1.get())
+    n2=int(e2.get())
+    messagebox.showinfo("division:",f"division= {n1/n2}")
+
+tk.Button(root,text="addition",command=operation1).pack()
+tk.Button(root,text="substraction",command=operation2).pack()
+tk.Button(root,text="multiplication",command=operation3).pack()
+tk.Button(root,text="division",command=operation4).pack()
+
+
+root.mainloop()
