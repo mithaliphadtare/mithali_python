@@ -1,0 +1,19 @@
+import tkinter as tk
+root =tk.Tk()
+root.title("RadioButton Example")
+root.geometry("400x500")
+
+lb=tk.Listbox(root)
+lb.pack()
+
+items=["python","C", "java","C++"]
+for i in items:
+    lb.insert("end",i)
+
+def show():
+    selected=lb.get(lb.curselection())
+    print(selected)
+
+tk.Button(root,text="show",command=show).pack()
+
+root.mainloop()
