@@ -1,0 +1,32 @@
+tk.Checkbutton(root,text="physics",variable=accept2).pack()
+accept3=tk.IntVar()
+tk.Checkbutton(root,text="chemistry",variable=accept3).pack()
+#radiobuttton
+tk.Label(root,text="Select Gender:").pack()
+
+gender=tk.StringVar()
+tk.Radiobutton(root,text="Male",variable= gender,value="male").pack()
+tk.Radiobutton(root,text="female",variable= gender,value="female").pack()
+#dropdownlist
+tk.Label(root,text="Select year studying:").pack()
+combo=ttk.Combobox(root,values=["fy","SY","TY"])
+combo.current(0)
+combo.pack()
+#checkbox
+agree=tk.IntVar()
+tk.Checkbutton(root,text="I accept terms and Condition",variable=agree).pack()
+#printing button
+def show():
+    print("Name:",r1.get())
+    print("Password",r2.get())
+    print("selected Subject:",accept.get())
+    print(accept2.get())
+    print(accept3.get())
+    print("gender :",gender.get())
+    print("selected from list:",combo.get())
+    print("agree or not:", agree.get())
+
+
+tk.Button(root,text="submit",command=show).pack()
+
+root.mainloop()
